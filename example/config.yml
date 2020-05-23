@@ -1,0 +1,10 @@
+Comport:
+  arduino: "arduino"
+  port: "/dev/ttyACM0"
+  baudrate: 115200
+  dotino: "./example/proto.ino"
+  warmup: 2.0
+
+Experimental:
+  loop: 10
+  interval: 0.5
