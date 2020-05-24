@@ -108,10 +108,10 @@ class Comport(object):
         """Write arduino program to connected board"""
         if self.__port == "":
             raise SerialException("Port must be specified")
-        if sys.platform == "win32":
-            call(self.__as_command(self.__arduino, self.__dotino, self.__port),
-                 shell=True)
-            return None
+#        if sys.platform == "win32":
+#            call(self.__as_command(self.__arduino, self.__dotino, self.__port),
+#                 shell=True)
+#            return None
         check_output(self.__as_command(self.__arduino, self.__dotino,
                                        self.__port),
                      shell=True)
